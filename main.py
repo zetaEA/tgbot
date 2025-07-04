@@ -69,8 +69,8 @@ def main():
     app.run_webhook(
         listen="0.0.0.0",
         port=int(os.environ.get("PORT", "10000")),
-        url_path=TOKEN,
-        webhook_url=f"https://{hostname}/{TOKEN}"
+        url_path="",
+        webhook_url=f"https://tgbot-9rd7.onrender.com/"
     )
 
 if __name__ == '__main__':
